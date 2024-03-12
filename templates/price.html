@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>AirShop</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              
+    <div class="col">
+      
+      <div class="card mb-4 rounded-3 shadow-sm">
+        
+        <div class="card-header py-3">
+          
+          <h4 class="my-0 fw-normal">Воздух Нечистивый</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">1₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Можно занюхнуть</li>
+            <li>Нельзя посмотреть на него</li>
+            <li>Прозрачный</li>
+          </ul>
+          <a href="/1"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+  </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Воздух почти Нечистивый</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">2₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Чистивей чем Нечистивый</li>
+            <li>Почти прозрачный</li>
+            <li>Так же можно занюхнуть</li>
+          </ul>
+          <a href="/2"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm ">
+        <div class="card-header py-3  ">
+          <h4 class="my-0 fw-normal">Воздух Чистивый</h4>
+        </div>
+        <div class="card-body">
+
+          <h1 class="card-title pricing-card-title">4₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Самый чистивый</li>
+            <li>Воздух</li>
+            <li>Согласен</li>
+          </ul>
+          <a href="/3"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              
+    <div class="col">
+      
+      <div class="card mb-4 rounded-3 shadow-sm">
+        
+        <div class="card-header py-3">
+          
+          <h4 class="my-0 fw-normal">Пакет без Воздуха</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="data:image/jpeg;base64,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" alt="" width="100" height="100">
+          <h1 class="card-title pricing-card-title">10₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Пакет можно надеть на голову</li>
+            <li>Можно ложить мусор</li>
+            <li>Можно положить воздух</li>
+          </ul>
+          <a href="/4"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+  </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Флакон без Воздуха</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="https://media.istockphoto.com/id/1178821252/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D1%83%D1%81%D1%82%D0%B0%D1%8F-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D1%8F%D0%BD%D0%BD%D0%B0%D1%8F-%D1%84%D0%BB%D0%B0%D0%BA%D0%BE%D0%BD-%D0%B4%D1%83%D1%85%D0%BE%D0%B2-%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5-%D1%81-%D0%BE%D1%82%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC.jpg?s=170667a&w=0&k=20&c=2udF0TGmqVPY7bz5DXLFFbu2k_iu8yfT26BxjPj-cxk=" alt="" width="100" height="100">
+          <h1 class="card-title pricing-card-title">20₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Более пустой чем наполненный</li>
+            <li>Нет крышечки</li>
+            <li>Красивый в отличии от тебя</li>
+          </ul>
+          <a href="/5"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Бутылка без Воздуха</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="https://media.istockphoto.com/id/1196579171/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D1%83%D1%81%D1%82%D0%B0%D1%8F-%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B1%D1%83%D1%82%D1%8B%D0%BB%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=170667a&w=0&k=20&c=IXOZMMDfvmSn8aryRnuNtsx7kCw-ltjkJ9aH7R8Xg-0=" alt="" width="100" height="100">
+
+          <h1 class="card-title pricing-card-title">40₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Пустая как и твоя жизнь</li>
+            <li>Воздуха нет</li>
+            <li>Очень удобное кресло</li>
+          </ul>
+          <a href="/6"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              
+    <div class="col">
+      
+      <div class="card mb-4 rounded-3 shadow-sm">
+        
+        <div class="card-header py-3">
+          
+          <h4 class="my-0 fw-normal">Пакет с Воздухом</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="https://cdn1.ozone.ru/s3/multimedia-q/6632063450.jpg" alt="" width="100" height="100">
+          <h1 class="card-title pricing-card-title">100₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Пакет можно надеть на голову</li>
+            <li>Можно ложить мусор</li>
+            <li>На него можно смотреть</li>
+          </ul>
+          <a href="/7"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+  </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Флакон с Воздухом</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="https://cdn1.ozone.ru/s3/multimedia-7/6148434703.jpg" alt="" width="100" height="100">
+          <h1 class="card-title pricing-card-title">200₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Дороже чем дешёвый</li>
+            <li>Есть крышечка</li>
+            <li>Идеальный</li>
+          </ul>
+          <a href="/8"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Бутылка с Воздухом</h4>
+        </div>
+        <div class="card-body">
+          <img class="mb-2" src="https://static.tildacdn.com/tild3732-6136-4134-b261-363236323462/5L1.png" alt="" width="100" height="100">
+
+          <h1 class="card-title pricing-card-title">400₽</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Пустая как и твоя жизнь</li>
+            <li>Воздух из Алтая</li>
+            <li>Очень удобное кресло</li>
+          </ul>
+          <a href="/9"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
